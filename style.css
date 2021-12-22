@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    width: 80%;
+    height: 70rem;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 25rem;
+    height: 25rem;
+}
+
+#description {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#button {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    height: 3rem;
+    width: 6rem;
+    font-size: 2rem;
+}
+
+img {
+    width: 25rem;
+    height: 25rem;
+}
