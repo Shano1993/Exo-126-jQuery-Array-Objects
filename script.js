@@ -8,6 +8,14 @@ let arrObj = [
 let index = 0;
 let img = $('#image');
 
+function user() {
+    for (let i = 0; i < arrObj.length; i++) {
+        document.getElementById("name").innerHTML = arrObj[index].person;
+        document.getElementById("age").innerHTML = arrObj[index].age + " Ans";
+        $(img.get(i)).attr("src", arrObj[index].avatar);
+    }
+}
+
 $('#left').click(function () {
     index--;
     user();
@@ -17,12 +25,4 @@ $('#right').click(function () {
     user();
     index++;
 })
-
-function user() {
-    for (let i = 0; i < arrObj.length; i++) {
-        document.getElementById("name").innerHTML = arrObj[index].person;
-        document.getElementById("age").innerHTML = arrObj[index].age + " Ans";
-        $(img.get(i)).attr("src", arrObj[index].avatar);
-    }
-}
 
